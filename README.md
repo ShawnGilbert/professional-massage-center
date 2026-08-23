@@ -1,5 +1,7 @@
-# Professional Massage Center
+# Professional Massage Center — v2 review build
 
-Static GitHub Pages replacement site for ProfessionalMassageCenter.com.
+Responsive GitHub Pages proposal for ProfessionalMassageCenter.com.
 
-Preview first on GitHub Pages before changing any DNS or custom-domain settings.
+This version restores a Florida/coastal feel while preserving the conversion-focused layout. It is a review build only; do not change the live custom-domain DNS until the business approves it.
+
+Hero beach photograph: Robert Woeger / Unsplash, used under the Unsplash License.

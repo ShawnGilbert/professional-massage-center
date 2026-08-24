@@ -1,7 +1,9 @@
-# Professional Massage Center — v2 review build
+# Professional Massage Center — review build v5
 
-Responsive GitHub Pages proposal for ProfessionalMassageCenter.com.
+Changes in this review build:
+- Preserves the existing beach/ocean hero and established page layout.
+- Adds subtle coastal-blue accents while retaining the burgundy PMC identity.
+- Uses the newly generated cleaned, wider building image in the lower location section.
+- Pricing cards now show only duration and Swedish/deep-tissue prices; the Focused/Full/Extended session labels were removed.
 
-This version restores a Florida/coastal feel while preserving the conversion-focused layout. It is a review build only; do not change the live custom-domain DNS until the business approves it.
-
-Hero beach photograph: Robert Woeger / Unsplash, used under the Unsplash License.
+This is a review build only. Do not replace the live site until approved.

@@ -1,113 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional Massage Center</title>
-  <meta name="description" content="Professional Massage Center — established 1996. Massage therapy in Melbourne, Florida." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Massage Center | Melbourne, FL</title>
+  <meta name="description" content="Professional Massage Center in Melbourne, Florida. Serving the community since 1996 with Swedish, deep tissue, pregnancy and couples massage." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="brand-wrap">
-      <img src="logo.png" alt="Professional Massage Center logo" class="logo" />
-      <div class="brand-text">
-        <div class="brand-name">Professional<br />Massage Center</div>
-        <div class="established">ESTABLISHED 1996</div>
-      </div>
-    </div>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Professional Massage Center home">
+        <img src="logo.png" alt="" class="brand-logo" />
+        <span class="brand-copy">
+          <strong>Professional<br />Massage Center</strong>
+          <small>ESTABLISHED 1996</small>
+        </span>
+      </a>
 
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#hours">Hours</a>
-      <a href="#location">Location</a>
-      <a href="#gift-certificates">Gift Certificates</a>
-      <a class="book-now" href="#">Book Now</a>
-    </nav>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#hours">Hours</a>
+        <a href="#location">Location</a>
+        <a href="http://www.secure-booker.com/promassage/InstantGiftCertificate.aspx">Gift Certificates</a>
+        <a class="btn primary" href="http://www.secure-booker.com/promassage/BookOnlineStart.aspx">Book Now</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <h1>Simple<br />pricing.</h1>
-      </div>
-      <div class="hero-intro">
-        <p>
-          Choose Swedish or deep tissue massage in the duration that fits your day.
-          Other durations and specialty services are available by request.
-        </p>
+  <main id="top">
+    <section id="services" class="services-section">
+      <div class="wrap">
+        <div class="section-head">
+          <h1>Simple<br />pricing.</h1>
+          <p>
+            Choose Swedish or deep tissue massage in the duration that fits your day.
+            Other durations and specialty services are available by request.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="eyebrow">30 MINUTES</div>
+            <h2>Focused session</h2>
+            <div class="price-line"><span class="price">$50</span><span>Swedish</span></div>
+            <div class="price-line"><span class="price">$55</span><span>Deep tissue</span></div>
+          </article>
+
+          <article class="card">
+            <div class="eyebrow">60 MINUTES</div>
+            <h2>Full session</h2>
+            <div class="price-line"><span class="price">$70</span><span>Swedish</span></div>
+            <div class="price-line"><span class="price">$80</span><span>Deep tissue</span></div>
+          </article>
+
+          <article class="card">
+            <div class="eyebrow">90 MINUTES</div>
+            <h2>Extended session</h2>
+            <div class="price-line"><span class="price">$90</span><span>Swedish</span></div>
+            <div class="price-line"><span class="price">$105</span><span>Deep tissue</span></div>
+          </article>
+        </div>
+
+        <div class="info-grid">
+          <article class="panel">
+            <h2><span class="spark">✦</span> Also available</h2>
+            <p>
+              Pregnancy massage, same-room or couples massage, and other durations upon request.
+            </p>
+          </article>
+
+          <article class="panel wellness-panel">
+            <h2>At Professional Massage Center</h2>
+            <p class="lead">
+              We believe that true wellness begins with relaxation, balance, and expert care.
+            </p>
+            <p>
+              Our team of licensed massage therapists is dedicated to helping you reduce stress,
+              relieve pain, and restore balance—one session at a time.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="services" class="pricing-grid">
-      <article class="price-card">
-        <div class="eyebrow">30 MINUTES</div>
-        <h2>Focused session</h2>
-        <div class="price-line"><span class="price">$50</span><span>Swedish</span></div>
-        <div class="price-line"><span class="price">$55</span><span>Deep tissue</span></div>
-      </article>
-
-      <article class="price-card">
-        <div class="eyebrow">60 MINUTES</div>
-        <h2>Full session</h2>
-        <div class="price-line"><span class="price">$70</span><span>Swedish</span></div>
-        <div class="price-line"><span class="price">$80</span><span>Deep tissue</span></div>
-      </article>
-
-      <article class="price-card">
-        <div class="eyebrow">90 MINUTES</div>
-        <h2>Extended session</h2>
-        <div class="price-line"><span class="price">$90</span><span>Swedish</span></div>
-        <div class="price-line"><span class="price">$105</span><span>Deep tissue</span></div>
-      </article>
+    <section class="booking-band">
+      <div class="wrap booking-inner">
+        <div>
+          <span>Ready to feel better?</span>
+          <strong>Book your massage today.</strong>
+        </div>
+        <a class="band-button" href="http://www.secure-booker.com/promassage/BookOnlineStart.aspx">Book Now</a>
+      </div>
     </section>
 
-    <section class="info-grid">
-      <article class="info-card">
-        <h2><span class="accent-mark">✦</span> Also available</h2>
-        <p>
-          Pregnancy massage, same-room or couples massage, and other durations upon request.
-        </p>
-      </article>
+    <section class="details-section">
+      <div class="wrap detail-grid">
+        <article id="hours" class="detail">
+          <h3>Hours</h3>
+          <p>Call or book online for current availability.</p>
+        </article>
 
-      <article class="info-card welcome-card">
-        <h2>At Professional Massage Center</h2>
-        <p>
-          We believe that true wellness begins with relaxation, balance, and expert care.
-        </p>
-        <p>
-          Our team of licensed massage therapists is dedicated to helping you reduce stress,
-          relieve pain, and restore balance—one session at a time.
-        </p>
-      </article>
-    </section>
+        <article id="location" class="detail">
+          <h3>Location</h3>
+          <p>2815 W New Haven Ave<br />Melbourne, FL 32904</p>
+        </article>
 
-    <section class="cta-strip">
-      <div>
-        <span class="cta-small">Ready to feel better?</span>
-        <strong>Book your massage today.</strong>
-      </div>
-      <a href="#" class="cta-button">Book Now</a>
-    </section>
-
-    <section class="details-grid">
-      <div id="hours" class="detail-block">
-        <h3>Hours</h3>
-        <p>Call or book online for current availability.</p>
-      </div>
-      <div id="location" class="detail-block">
-        <h3>Location</h3>
-        <p>Executive West, 8345 N. Wickham Rd., Melbourne, FL 32940</p>
-      </div>
-      <div id="gift-certificates" class="detail-block">
-        <h3>Gift Certificates</h3>
-        <p>Gift certificates are available online.</p>
+        <article class="detail">
+          <h3>Gift Certificates</h3>
+          <p><a href="http://www.secure-booker.com/promassage/InstantGiftCertificate.aspx">Gift certificates are available online.</a></p>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 Professional Massage Center. All Rights Reserved.</p>
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Professional Massage Center, Inc. · MM6549</span>
+      <a href="tel:+13217250073">(321) 725-0073</a>
+    </div>
   </footer>
+
+  <div class="mobile-cta">
+    <a class="btn primary" href="http://www.secure-booker.com/promassage/BookOnlineStart.aspx">Book Now</a>
+    <a class="btn secondary" href="tel:+13217250073">Call</a>
+  </div>
 </body>
 </html>

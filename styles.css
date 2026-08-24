@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap');
+
+:root {
+  --ink: #241a1a;
+  --muted: #6f5a5a;
+  --cream: #fbf7f2;
+  --card: #fffdfb;
+  --line: #eadfd8;
+  --plum: #6f214f;
+  --rose: #a50f4f;
+  --blue: #4c82ba;
+  --blue-soft: #dce9f6;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 3.5vw;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid #efe8e2;
+  backdrop-filter: blur(8px);
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  min-width: 300px;
+}
+
+.logo {
+  width: 46px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: .96;
+  color: #5d2a3f;
+}
+
+.established {
+  margin-top: .35rem;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: var(--rose);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: .92rem;
+}
+
+.nav a {
+  color: #5d5555;
+  text-decoration: none;
+}
+
+.nav a:hover { color: var(--blue); }
+
+.book-now,
+.cta-button {
+  background: linear-gradient(135deg, var(--rose), var(--plum));
+  color: white !important;
+  padding: .9rem 1.45rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(111,33,79,.14);
+}
+
+main { overflow: hidden; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+  align-items: end;
+  padding: 2.8rem 3.5vw 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(76,130,186,.08), rgba(255,255,255,0) 55%),
+    var(--cream);
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(3.2rem, 6.2vw, 5.9rem);
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.hero-intro {
+  max-width: 760px;
+  padding-bottom: .7rem;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 3.5vw 1.2rem;
+}
+
+.price-card,
+.info-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(82,57,48,.045);
+}
+
+.price-card {
+  padding: 1.7rem 1.5rem;
+  min-height: 220px;
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-size: .84rem;
+  letter-spacing: .08em;
+  font-weight: 800;
+}
+
+.price-card h2,
+.info-card h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  margin: .5rem 0 1.15rem;
+}
+
+.price-card h2 { font-size: 1.55rem; }
+
+.price-line {
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
+  margin: .5rem 0;
+  color: #6e6262;
+  font-weight: 700;
+}
+
+.price {
+  color: var(--rose);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: .2rem 3.5vw 3rem;
+}
+
+.info-card {
+  padding: 1.7rem 1.8rem;
+  min-height: 210px;
+}
+
+.info-card h2 { font-size: 1.45rem; }
+
+.info-card p {
+  margin: .7rem 0;
+  line-height: 1.55;
+  font-size: 1.02rem;
+}
+
+.accent-mark {
+  color: var(--blue);
+  margin-right: .35rem;
+}
+
+.welcome-card {
+  border-top: 5px solid var(--blue);
+  background:
+    linear-gradient(160deg, rgba(220,233,246,.75), rgba(255,253,251,1) 55%);
+}
+
+.cta-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 5vw;
+  background: linear-gradient(90deg, #285f98 0%, #4c82ba 45%, #6f214f 100%);
+  color: white;
+}
+
+.cta-strip div {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.cta-small { opacity: .82; }
+
+.cta-strip strong { font-size: 1.35rem; }
+
+.cta-button {
+  background: white;
+  color: var(--plum) !important;
+  padding-inline: 1.8rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  padding: 2.4rem 3.5vw;
+  background: white;
+}
+
+.detail-block {
+  border-top: 3px solid var(--blue);
+  padding-top: .9rem;
+}
+
+.detail-block h3 {
+  margin: 0 0 .45rem;
+  color: var(--plum);
+}
+
+.detail-block p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: #241a1a;
+  color: #eee4df;
+  font-size: .82rem;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header,
+  .hero,
+  .pricing-grid,
+  .info-grid,
+  .details-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .brand-wrap { min-width: 0; }
+  .nav { font-size: .84rem; }
+
+  .cta-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
